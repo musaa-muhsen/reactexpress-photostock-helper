@@ -1,0 +1,163 @@
+
+// search bar ======================================
+.search-main-container {
+  margin: 80px auto 20px auto;
+    //background: lightblue;
+    display: flex;
+    width: auto;
+    @media all and (max-width: 549px) {
+        margin: 80px auto 20px auto;
+    }
+    .search-wrapper {
+        margin: auto;
+               
+   
+    .form-search {
+
+        display: flex;
+        .search-bar { 
+            width: 500px;
+            padding: 15px 20px;
+           border: 0 solid transparent;
+            border-radius: 40px 0 0 40px;         
+            background-color: #eee;    
+    
+        }
+        @media all and (max-width: 620px) {
+            .search-bar {
+                width: 300px;
+            }
+        }
+        @media all and (max-width: 400px) {
+            .search-bar {
+                width: 250px;
+            }
+        }
+        @media all and (max-width: 400px) {
+            .search-bar {
+                width: 250px;
+            }
+        }
+        .search-icon-container {
+            background-color: #eee; 
+            cursor:pointer;
+            border: 0 solid transparent;
+            padding: 6px 20px 6px 0;
+            border-radius: 0 40px 40px 0;
+    
+                
+        } 
+    }
+}
+    
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #111111;
+    opacity: 1; /* Firefox */
+    
+  }
+
+
+  // random word ===================================================
+.lucky-container {
+   
+
+    width: auto;
+  
+   // background: lightgrey;
+    display: flex;
+    margin: 0 auto;
+    
+    .lucky-btn-form {
+        
+        display: block;
+        margin: auto;
+        .lucky-button {
+            @media all and (max-width: 550px) {
+            
+                    font-size: 0.9rem;
+               
+            }
+            font-size: 1rem;
+            font-weight: 700;
+            transition: all 0.3s;
+            background: #fff;
+            border-radius: 5px;
+           padding: 10px 12px;
+           border: #d1d1d1 solid 1px;
+           &:hover {
+               border: #767676 solid 1px;
+               cursor:pointer;
+
+           }
+        }
+
+
+    }     
+}
+
+// button suggestions ===========================================================
+.button-main-container {
+    //background: #eee;
+    margin: 100px auto;
+    width: 600px;
+    @media all and (max-width: 550px) {
+        width: 96%;
+        margin: 80px auto 50px auto;
+    }
+.button-title {
+    margin-bottom: 20px;
+    padding-left: 6px;
+    font-size: 1rem*1.618;
+}
+.buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+    width: auto;
+    //background: lightyellow;
+    @media all and (max-width: 501px) {
+       // height: 0 !important;
+        width: 100%;
+}
+    button {
+        cursor:pointer;
+        background: #0077ED;
+        border: transparent 0px solid;
+        color: #fff;
+        padding: 6px 13px;
+        border-radius: 23px;
+        text-transform: capitalize;
+        font-weight: 500;
+     margin: 8px;
+     transition: all 0.3s;
+     font-size: 1rem;
+     @media all and (max-width: 600px) {
+        font-size: 1rem;
+      
+ }
+    }
+
+    button:hover {
+        background: #eee;
+        color:  #111;
+    }
+    button:first-child {
+
+    }
+    button:last-child {
+
+    }
+}
+}
+
+.button-main-wrapper {
+   // margin: 30px auto;
+    //display: flex;
+}

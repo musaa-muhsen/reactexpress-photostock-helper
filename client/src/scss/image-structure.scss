@@ -1,0 +1,209 @@
+.image-container {
+    margin: 20px auto;
+}
+
+
+.__react_modal_image__modal_container {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+        overflow: auto !important;
+
+}
+.__react_modal_image__header {
+    background-color: rgba(0, 0, 0, 0.7) !important;    
+}
+.__react_modal_image__modal_content {
+    margin-top: 5vh !important;
+}
+.image-container div {
+    display: flex;
+    img.image-wrapper {
+        margin: auto;
+    }
+}
+@media all and (min-width: 550px) {
+    .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 10px;
+    }
+    
+    .image-container img.image-wrapper {
+        width: 250px !important;
+    }
+    //.__react_modal_image__icon_menu {
+        //grid-column: 2, span 1 !important;
+    //     float: none !important;
+    //}
+    #react-modal-image-img {
+       width: 700px !important;
+       height: auto !important;
+    }
+
+}
+
+
+// max 550px =================================================================
+@media all and (max-width: 900px) and (min-width: 550px) {
+
+    #react-modal-image-img {
+        width: 95% !important;
+        height: auto !important;
+     }
+
+.image-container {
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 12px;
+    grid-auto-rows: auto;
+}
+
+.image-container img.image-wrapper {
+    width: 200px !important;
+}
+}
+
+// 550px =================================================================
+@media all and (max-width: 549px) and (min-width: 401px){
+
+    #react-modal-image-img {
+        width: 95% !important;
+        height: auto !important;
+     }
+
+.image-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-rows: 270px;
+
+}
+
+.image-container img.image-wrapper {
+    width: 180px !important;
+}
+}
+
+// 400px  ==========================================
+
+@media all and (max-width: 400px) {
+
+    #react-modal-image-img {
+        width: 95% !important;
+        height: auto !important;
+     }
+
+.image-container {
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    grid-auto-rows: 250px;
+
+}
+
+.image-container img.image-wrapper {
+    width: 160px !important;
+}
+}
+
+// about =============================================================
+
+.about-main-container {
+    width: 500px;
+    @media all and (max-width: 501px) {
+        max-width: 94%;
+
+    }
+    margin: 0 auto 20vh auto;
+    
+   h2 {
+       font-size: 1rem*1.618;
+       margin: 40px 0;
+      
+       
+   }
+    p {
+      
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5;
+        span {
+            // background: #0077ED;
+            // padding: 1px;
+            // color: #eee;
+        }
+       
+    }
+}
+// no images =======================================
+
+.no-image-container {
+   grid-column: 1 / span all;
+   //background: lightpink;
+  // padding: 20px 0;
+   display: flex;
+   div {
+       margin: auto;
+       display: flex;
+       flex-direction: column;
+       h1 {
+           text-transform: uppercase;
+           color: #0077ED;
+           text-align: center;
+           font-size: 1rem*1.618;
+           margin-top: 20px;
+           margin-bottom: 20px;
+
+       }
+       svg {
+           margin: 0 auto;
+           @media all and (max-width: 550px) {
+               width: 200px;
+
+           }
+           
+       }
+
+   }
+
+}
+
+
+
+
+
+
+
+//.image-container img.image-wrapper {
+    //width: 250px;
+//}
+
+// .container-button {
+//         position: relative;
+//         width: 50%;
+//       }
+      
+      // /* Make the image responsive */
+      // .container-button img {
+      //   width: 100%;
+      //   height: auto;
+      // }
+      
+      // /* Style the button and place it in the middle of the container/image */
+      // .container-button .btn {
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%, -50%);
+      //   -ms-transform: translate(-50%, -50%);
+      //   background-color: #555;
+      //   color: white;
+      //   font-size: 16px;
+      //   padding: 12px 24px;
+      //   border: none;
+      //   cursor: pointer;
+      //   border-radius: 5px;
+      // }
+      
+      // .container-button .btn:hover {
+      //   background-color: black;
+      // }
