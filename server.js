@@ -14,7 +14,6 @@ app.get('/api/:word', async (req, res) => {
   const word = req.params.word;
   console.log(word);
   // res.json(customers);
- // const imageURL = await fetch(`https://api.unsplash.com/search/photos?query=${word}&client_id=BgwLpezqvGtqHU5Q23sXjv0kJSebWvOoG_3fKA6ALOs`); 
   const imageURL = await fetch(`https://api.unsplash.com/search/photos?per_page=30&query=${word}&client_id=${API_KEY}`); 
   const data = await imageURL.json();
   res.json(data)
